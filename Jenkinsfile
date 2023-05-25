@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('clone') {
       steps {
-        sh "rm -rf .git"
+        sh "rm -rf jenkins-test"
         sh "git clone https://github.com/MPFabio/jenkins-test"
       }
     }  
