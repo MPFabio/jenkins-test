@@ -4,9 +4,11 @@ pipeline {
     stage('clone') {
       steps {
         sh "rm -rf*"
-        sh git clone https://github.com/MPFabio/jenkins-test"
+        sh git clone https://github.com/MPFabio/jenkins-test
+        }  
       }
     }
+    
     stage {
       stage('version') {
         steps {
